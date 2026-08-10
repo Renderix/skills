@@ -14,7 +14,7 @@ This is a curated personal repository. External contributions are not accepted a
 
 ## Evaluation
 
-[`evals/`](evals/README.md) contains reproducible task manifests and fixtures for comparing coding-agent behavior with and without skills.
+[`evals/`](evals/README.md) contains reproducible task manifests and fixtures for comparing coding-agent behavior with and without skills. Static validation is local and repeatable; live Pi/Codex evaluations are currently manual and require isolated workspaces and credentials.
 
 ## License
 

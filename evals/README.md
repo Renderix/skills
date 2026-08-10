@@ -25,6 +25,18 @@ python3 evals/validate.py --results evals/results
 
 The validator intentionally does not invoke an LLM. Harness commands, models, credentials, and sandboxing differ by installation and must be chosen deliberately.
 
+## Automation Status
+
+Static manifest validation is ready to run on every change:
+
+```bash
+python3 evals/validate.py
+```
+
+Live Pi/Codex evaluations are **manual** for now. They require a disposable sandbox, model credentials, and an explicit baseline-versus-treatment comparison. The treatment must record whether the full `SKILL.md` was actually invoked; merely exposing a skill's name and description does not guarantee invocation.
+
+Do not run live evaluations automatically on every PR until a protected runner, isolated workspace, credential policy, cost budget, and explicit skill-invocation mechanism are in place. A later GitHub Action should be manually dispatched or scheduled, while static validation remains a required PR check.
+
 ## Pi Example
 
 From an isolated fixture copy, run a control without discovered skills, then a treatment with explicit skill paths:
