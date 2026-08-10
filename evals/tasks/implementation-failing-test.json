@@ -1,0 +1,9 @@
+{
+  "id": "implementation-failing-test",
+  "prompt": "Fix the failing behavior. Keep the public API unchanged, add or improve targeted tests if needed, and run the relevant build and tests.",
+  "skills": ["software-delivery", "code-implementation", "test-engineering", "code-quality-evaluation"],
+  "fixture": "fixtures/implementation-failing-test",
+  "setup": ["git init -b main", "git add . && git commit -m 'chore: fixture baseline'"],
+  "checks": ["python3 -m unittest -v", "python3 -m py_compile calculator.py"],
+  "policy_checks": ["No new dependencies", "Public function signature unchanged", "Regression test covers the zero-discount boundary"]
+}

@@ -17,6 +17,10 @@ Skills follow the [Agent Skills](https://agentskills.io/) `SKILL.md` format and 
 
 This is a curated personal repository. External contributions are not accepted at this time.
 
+## Evaluation
+
+[`evals/`](evals/README.md) contains reproducible task manifests and fixtures for comparing coding-agent behavior with and without skills. Static validation is local and repeatable; live Pi/Codex evaluations are currently manual and require isolated workspaces and credentials.
+
 ## License
 
 [MIT](LICENSE)
