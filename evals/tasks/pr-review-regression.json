@@ -1,6 +1,6 @@
 {
   "id": "pr-review-regression",
-  "prompt": "Review the proposed change. Report only concrete, actionable findings with severity, location, and failure scenario. Do not modify the implementation.",
+  "prompt": "Review the proposed change. Write findings to REVIEW.md; include only concrete, actionable findings with severity, location, and failure scenario. Do not modify the implementation.",
   "skills": ["pull-request-review"],
   "fixture": "fixtures/pr-review-regression",
   "setup": ["git init -b main", "git add before.py && git commit -m 'chore: fixture baseline'", "present proposed.py as the uncommitted proposed diff"],
