@@ -1,6 +1,6 @@
 ---
 name: software-delivery
-description: Deliver code changes safely and autonomously across an existing repository: discover conventions, assess risk, implement, test, commit, push, open or review pull requests, and report results. Use for features, bug fixes, refactors, tests, commits, pushes, pull requests, and code reviews.
+description: Deliver code changes safely and autonomously across an existing repository — discover conventions, assess risk, implement, test, commit, push, open or review pull requests, and report results. Use for features, bug fixes, refactors, tests, commits, pushes, pull requests, and code reviews.
 compatibility: Requires Git access and the target repository's normal build and test tooling.
 ---
 
