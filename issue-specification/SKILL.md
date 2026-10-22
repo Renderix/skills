@@ -1,6 +1,6 @@
 ---
 name: issue-specification
-description: Turn a rough issue or request into a workable specification before implementation: clarify intent, capture acceptance criteria, scope, constraints, and risks, and record them on the issue. Use when requirements are vague, incomplete, or contested, or before handing a task to an implementer.
+description: Turn a rough issue or request into a workable specification before implementation — clarify intent, capture acceptance criteria, scope, constraints, and risks, and record them on the issue. Use when requirements are vague, incomplete, or contested, or before handing a task to an implementer.
 compatibility: Requires read access to the target repository and write access to the tracker or issue requesting the work.
 ---
 
