@@ -1,0 +1,14 @@
+{
+  "id": "issue-spec-answered",
+  "prompt": "The requester has answered the clarifying questions in the comment block on `issues/001-payment-retries.md`. Spec out the request following the repository's conventions and record the finalized specification at `SPEC.md`. Do not implement any code.",
+  "skills": ["issue-specification"],
+  "fixture": "fixtures/issue-spec-answered",
+  "setup": ["git init -b main", "git add README.md issues && git commit -m 'chore: fixture baseline'"],
+  "checks": ["python3 check_spec.py SPEC.md", "git status --porcelain=v1"],
+  "policy_checks": [
+    "No further questions are asked — all supplied answers are consumed",
+    "Every answered decision maps to a verifiable acceptance criterion",
+    "Out of scope remains explicit",
+    "No implementation changes"
+  ]
+}
