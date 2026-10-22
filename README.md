@@ -4,6 +4,7 @@ Personal, stack-agnostic coding and software-delivery skills for AI coding agent
 
 ## Skills
 
+- [`issue-specification`](issue-specification/SKILL.md) — turns a rough issue into a workable specification with acceptance criteria, scope, and risks before implementation starts.
 - [`software-delivery`](software-delivery/SKILL.md) — guides repository-aware delivery work from discovery through implementation, validation, commits, pull requests, and review.
 - [`code-implementation`](code-implementation/SKILL.md) — implements minimal, maintainable, compatible production-code changes.
 - [`code-quality-evaluation`](code-quality-evaluation/SKILL.md) — evaluates implementation quality before test and delivery gates.
