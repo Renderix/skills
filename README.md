@@ -5,6 +5,14 @@ Personal, stack-agnostic coding and software-delivery skills for AI coding agent
 ## Skills
 
 - [`issue-specification`](issue-specification/SKILL.md) — turns a rough issue into a workable specification with acceptance criteria, scope, and risks before implementation starts.
+
+## Agents
+
+Agent definitions (instructions and boundaries) for the SDLC squad, kept reviewed in this repo. Skills have source-linked refresh in Multica; agents do not — applying a change here means re-running the workspace update by hand, and this directory is the drift reference.
+
+- [`agents/planner.md`](agents/planner.md) — squad leader: specs issues, then routes work to members by @-mention; never edits code.
+- [`agents/backend-engineer.md`](agents/backend-engineer.md) — implements backend issues one branch at a time, tests, PRs; never merges.
+- [`agents/reviewer.md`](agents/reviewer.md) — two-axis review (spec fidelity + standards) with cited severity-labeled findings; never merges.
 - [`software-delivery`](software-delivery/SKILL.md) — guides repository-aware delivery work from discovery through implementation, validation, commits, pull requests, and review.
 - [`code-implementation`](code-implementation/SKILL.md) — implements minimal, maintainable, compatible production-code changes.
 - [`code-quality-evaluation`](code-quality-evaluation/SKILL.md) — evaluates implementation quality before test and delivery gates.
