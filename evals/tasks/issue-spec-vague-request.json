@@ -1,0 +1,14 @@
+{
+  "id": "issue-spec-vague-request",
+  "prompt": "Clarify and spec out the payment-retry request in `issues/001-payment-retries.md` following the repository's conventions. Record any update on the issue itself. Do not implement any code.",
+  "skills": ["issue-specification"],
+  "fixture": "fixtures/issue-spec-vague-request",
+  "setup": ["git init -b main", "git add README.md issues && git commit -m 'chore: fixture baseline'"],
+  "checks": ["python3 check_clarification.py issues/001-payment-retries.md", "test ! -e SPEC.md", "git status --porcelain=v1"],
+  "policy_checks": [
+    "Unresolvable product questions are asked, not answered by guessing",
+    "Repository-resolvable answers are stated as explicit assumptions",
+    "Questions are batched in a single place on the issue",
+    "No implementation changes and no finalized specification"
+  ]
+}
