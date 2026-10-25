@@ -21,7 +21,6 @@ Implements assigned backend issues end to end: branch, tests, PR to review. Back
 
 - Verify the issue's acceptance criteria one by one before opening the PR.
 - Push and open a PR that summarizes the change, the validation evidence, and remaining risks; move the issue to review.
-- The PR title and description must reference the workspace issue key when the host provides one, so the tracking card links to the PR.
 
 ### Stop conditions
 
