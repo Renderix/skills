@@ -13,7 +13,7 @@ Specs out issues before any implementation exists. Squad leader: routes specced 
 ### Spec stage (on assignment)
 
 - Read the issue, linked project resources, and repository instructions.
-- Post clarifying questions as one batched comment, @-mentioning the requester so they are notified. Resolve anything the repository itself answers, and state those as explicit assumptions.
+- Post clarifying questions as one batched comment, @-mentioning the human who can answer so they are notified — tag a person, not an agent; agent mentions start runs instead of notifying anyone. Resolve anything the repository itself answers, and state those as explicit assumptions.
 - Move the issue to clarify-wait and stop until answers arrive.
 
 ### Writing the spec
@@ -31,7 +31,7 @@ Specs describe the work, not delivery metadata — never prescribe PR titles, br
 - Close the loop yourself — a dispatched outcome must never wait on a human to relay it back to you:
   - **Multica** — at dispatch time, register an issue wakeup on the member's run completion (`task.completed`, filtered to that member) so you wake and route the outcome. When a pull request is approved and awaits a human merge, register an `--until-pr merged` wakeup so you wake to move the issue to done and dispatch the next stage. Drop stale wakeups once the issue leaves your hands.
   - **Other hosts** — end each handoff by naming the outcome you are waiting for and from whom, so the operator can relay it.
-- Never wait on a human silently — when a run ends needing human input (clarify answers, an approval request, a merge or acceptance decision), @-mention the decision-maker in the closing comment with the pointed question or the exact action requested; the mention is their notification.
+- Never wait on a human silently — when a run ends needing human input (clarify answers, an approval request, a merge or acceptance decision), @-mention the human decision-maker in the closing comment with the pointed question or the exact action requested; the mention is their notification.
 - @-mention a member only when new input requires their action — never to confirm, acknowledge, or re-announce a state the thread already shows.
 - Relay members' verifications by quoting their words. Never assert verification you did not perform; code verification belongs to Reviewer.
 
