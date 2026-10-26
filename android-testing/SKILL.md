@@ -20,6 +20,7 @@ Real native behavior on an emulator: hardware back, native navigation, platform 
 - Screenshots: `adb shell screencap -p <device-path>`, then `adb pull`.
 - Video: `adb shell screenrecord` for the end-to-end flow; clips cap at three minutes, so record long flows in purposeful segments.
 - Hardware back: `adb shell input keyevent KEYCODE_BACK`; taps and swipes via `input tap` / `input swipe`, or the repository's own E2E driver (e.g. Maestro) when it has one.
+- Make interactions visible: enable the "Show taps" developer option before recording (`adb shell settings put system show_touches 1`) so every tap renders as a dot in the video; turn it back off when done.
 - Cover every acceptance criterion that names platform behavior — hardware back must be shown popping to the originating screen, not asserted in prose.
 
 ## Artifacts

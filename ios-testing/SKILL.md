@@ -18,6 +18,7 @@ Native iOS evidence from the simulator: navigation chrome, safe area, platform s
 - Screenshots: `xcrun simctl io booted screenshot <path>`.
 - Video: run `xcrun simctl io booted recordVideo <path>` in the background while driving the flow; stop it with SIGINT when the pass completes.
 - Drive the UI with the repository's own E2E driver when present; otherwise scripted taps. iOS has no hardware back — show back navigation through on-screen controls or the swipe gesture.
+- Make interactions visible: enable touch indicators in the simulator (`defaults write com.apple.iphonesimulator ShowSingleTouches 1`, then restart Simulator) so taps render as dots in recordings.
 - Cover every acceptance criterion that names platform behavior with on-screen proof, not prose.
 
 ## Artifacts

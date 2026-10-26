@@ -19,6 +19,7 @@ Use for routes, layout, rendering, params, and client-side behavior. Web capture
 - Use a device-like viewport for mobile apps.
 - Screenshot every screen and state the change touches, from a clean known state.
 - Record the full end-to-end flow as video (Playwright `recordVideo` or trace) when the change spans screens; one continuous pass beats fragments.
+- Make interactions visible: browser automation dispatches synthetic DOM events, so videos show no cursor or tap indicator by default. Inject an overlay via `addInitScript` that renders a ripple or dot on every `pointerdown`, so a viewer can see where the automation clicks.
 
 ## Artifacts
 
