@@ -19,6 +19,9 @@ Agent definitions (instructions and boundaries) for the SDLC squad, kept reviewe
 - [`test-engineering`](test-engineering/SKILL.md) — designs and runs proportional automated validation, including edge cases and failures.
 - [`git-delivery`](git-delivery/SKILL.md) — safely branches, commits, pushes, and prepares pull requests.
 - [`pull-request-review`](pull-request-review/SKILL.md) — reviews correctness, security, tests, maintainability, and delivery risk.
+- [`web-testing`](web-testing/SKILL.md) — captures screenshot and video evidence from web builds via Playwright; the default evidence platform.
+- [`android-testing`](android-testing/SKILL.md) — captures emulator-based Android evidence (screenshots, video, hardware back) via adb.
+- [`ios-testing`](ios-testing/SKILL.md) — captures simulator-based iOS evidence via xcrun simctl.
 
 ## Compatibility
 

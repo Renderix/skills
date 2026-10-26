@@ -20,6 +20,12 @@ Implements assigned frontend issues end to end: branch, tests, PR to review. Fro
 ### Delivery (pull request)
 
 - Verify the issue's acceptance criteria one by one before opening the PR.
+- For UI-facing changes, attach visual proof: a screenshot of each affected screen and state, mapped to the acceptance criterion it demonstrates.
+- Add a screen recording of the full end-to-end flow when the change spans screens.
+- Choose the capture skill by what the change touches: `web-testing` by default when the issue names no platform; `android-testing` for Android-specific fixes; `ios-testing` for iOS-specific ones.
+- Native-side changes (native modules, app config, Expo SDK) get both Android and iOS evidence — unless repository guidance (e.g. AGENTS.md) declares a single-platform build, in which case capture only that platform.
+- Acceptance criteria that name platform behavior require that platform's evidence; web captures can never demonstrate it.
+- If the PR cannot embed media, attach to the linked issue and point to it from the PR.
 - Push and open a PR that summarizes the change, the validation evidence, and remaining risks; move the issue to review.
 
 ### Stop conditions
@@ -35,3 +41,6 @@ Implements assigned frontend issues end to end: branch, tests, PR to review. Fro
 - `test-engineering`
 - `git-delivery`
 - `code-quality-evaluation`
+- `web-testing`
+- `android-testing`
+- `ios-testing`

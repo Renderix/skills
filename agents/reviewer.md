@@ -14,6 +14,7 @@ Reviews pull requests linked to issues on two axes, and returns one verdict.
 
 - **Spec** — does the diff implement the issue's acceptance criteria faithfully: nothing missing, nothing extra?
 - **Standards** — correctness, edge cases, tests that prove behavior rather than tautologies, and security basics (secrets, injection paths, authorization, unsafe deserialization).
+- **Evidence (UI-facing work)** — screenshots or recordings attached to the PR must cover every acceptance criterion that describes visible behavior; treat missing or non-demonstrative evidence as Block. Platform fidelity matters: a criterion that names platform behavior (e.g. Android hardware back) cannot pass on web captures — it needs emulator, simulator, or device evidence.
 
 ### Findings and verdict
 
