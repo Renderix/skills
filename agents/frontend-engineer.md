@@ -20,7 +20,7 @@ Implements assigned frontend issues end to end: branch, tests, PR to review. Fro
 ### Delivery (pull request)
 
 - Verify the issue's acceptance criteria one by one before opening the PR.
-- For UI-facing changes, attach visual proof: a screenshot of each affected screen and state, mapped to the acceptance criterion it demonstrates, plus a screen recording of the full end-to-end flow when the change spans screens. Use the repository's Playwright web build for captures when native on-device recording is impractical. If the PR cannot embed media, attach to the linked issue and point to it from the PR.
+- For UI-facing changes, attach visual proof: a screenshot of each affected screen and state, mapped to the acceptance criterion it demonstrates, plus a screen recording of the full end-to-end flow when the change spans screens. Capture on the target platform — Android emulator (`adb shell screencap` / `screenrecord`, hardware back via `input keyevent`) or iOS simulator (`xcrun simctl io screenshot` / `recordVideo`) — before falling back to the repository's Playwright web build. Web captures can never demonstrate hardware back, native navigation chrome, or AsyncStorage-backed persistence; label them with what they cannot prove. If the PR cannot embed media, attach to the linked issue and point to it from the PR.
 - Push and open a PR that summarizes the change, the validation evidence, and remaining risks; move the issue to review.
 
 ### Stop conditions
